@@ -1,6 +1,6 @@
 # Mental Health Voice Bot 🎙️💙
 
-A compassionate, voice-first mental health support chatbot with multilingual support. Built with FastAPI, React, and powered by Groq's ultra-fast AI models.
+A compassionate, voice-first mental health support chatbot with multilingual support, personalized coping strategies, and therapist finder. Built with FastAPI, React, and powered by Groq's ultra-fast AI models.
 
 ![License](https://img.shields.io/badge/license-MIT-blue.svg)
 ![Python](https://img.shields.io/badge/python-3.11+-blue.svg)
@@ -8,39 +8,74 @@ A compassionate, voice-first mental health support chatbot with multilingual sup
 
 ## ✨ Features
 
-- 🎤 **Voice-First Experience**: Natural voice conversations with real-time processing
-- 🌍 **Multilingual Support**: 10+ languages including English, Hindi, Spanish, French, German, Portuguese, Italian, Japanese, Korean, and Chinese
-- ⚡ **Ultra-Fast Inference**: Powered by Groq's LPU for near-instant responses (<2 seconds end-to-end)
-- 🔒 **Privacy-Focused**: Conversations are ephemeral with no persistent storage
-- 🎨 **Modern UI**: Beautiful, calming interface with smooth animations
-- 🚨 **Crisis Detection**: Identifies crisis indicators and provides appropriate resources
-- 🆓 **100% Free**: Uses free APIs (Groq, Edge TTS) with generous limits
+### 🎤 Voice & Chat
+- **Voice-First Experience**: Natural voice conversations with real-time processing
+- **Multilingual Support**: 10+ languages including English, Hindi, Spanish, French, German, Portuguese, Italian, Japanese, Korean, and Chinese
+- **Emotional Voice**: Natural-sounding responses with subtle emotional prosody
+- **Ultra-Fast Inference**: Powered by Groq's LPU for near-instant responses (<2 seconds end-to-end)
+
+### 💡 Coping Strategies
+- **22 Evidence-Based Exercises**: Breathing techniques, grounding exercises, mindfulness, CBT, and physical activities
+- **Personalized Recommendations**: AI-powered suggestions based on your conversation
+- **Video Guides**: YouTube tutorials for each strategy
+- **Scientific Backing**: Each strategy includes research references
+- **Multilingual**: Available in English and Hindi
+
+### 🏥 Therapist Finder
+- **27+ Verified Therapists**: Across 9 major Indian states
+- **Smart Search**: Filter by state, specialty, language, price, and availability
+- **AI Recommendations**: Get therapist suggestions based on your needs
+- **Detailed Profiles**: Ratings, experience, specialties, and contact information
+- **Online & In-Person**: Options for both consultation types
+
+### 🚨 Safety & Support
+- **Crisis Detection**: Identifies crisis indicators in multiple languages
+- **Indian Helplines**: AASRA, Vandrevala Foundation, Kiran, iCall, NIMHANS
+- **Culturally Sensitive**: Designed for Indian users with understanding of local context
+- **Privacy-Focused**: Conversations are ephemeral with no persistent storage
+
+### 🎨 User Experience
+- **Modern UI**: Beautiful, calming interface with smooth animations
+- **Mobile Responsive**: Works seamlessly on all devices
+- **Easy Navigation**: Intuitive routing between chat, strategies, and therapist finder
+- **100% Free**: Uses free APIs (Groq, Edge TTS) with generous limits
 
 ## 🏗️ Architecture
 
 ```
-┌─────────────────┐
-│   React Frontend │
-│   (Vite + Tailwind) │
-└────────┬────────┘
-         │ REST API
-         ▼
-┌─────────────────┐
-│  FastAPI Backend │
-│  ┌────────────┐ │
-│  │ STT Service│ │  ← Groq Whisper
-│  │ LLM Service│ │  ← Groq Llama 3.1
-│  │ TTS Service│ │  ← Edge TTS
-│  │ Therapy Svc│ │
-│  └────────────┘ │
-└─────────────────┘
+┌─────────────────────────────────────────────────────────────┐
+│                     React Frontend (Vite)                    │
+│  ┌──────────────┐  ┌─────────────────┐  ┌────────────────┐ │
+│  │  Chat Page   │  │ Coping Strategies│  │ Therapist Finder│ │
+│  └──────────────┘  └─────────────────┘  └────────────────┘ │
+└────────────────────────────┬────────────────────────────────┘
+                             │ REST API
+                             ▼
+┌─────────────────────────────────────────────────────────────┐
+│                    FastAPI Backend                           │
+│  ┌────────────┐  ┌────────────┐  ┌──────────────────────┐  │
+│  │ STT Service│  │ LLM Service│  │   Therapy Service    │  │
+│  │  (Whisper) │  │ (Llama 3.1)│  │  (Crisis Detection)  │  │
+│  └────────────┘  └────────────┘  └──────────────────────┘  │
+│  ┌────────────┐  ┌────────────┐  ┌──────────────────────┐  │
+│  │ TTS Service│  │Emotion Svc │  │   Coping Service     │  │
+│  │ (Edge TTS) │  │(Groq LLM)  │  │ (22 Strategies DB)   │  │
+│  └────────────┘  └────────────┘  └──────────────────────┘  │
+│  ┌──────────────────────────────────────────────────────┐  │
+│  │         Therapist Service (27+ Therapists DB)        │  │
+│  └──────────────────────────────────────────────────────┘  │
+└─────────────────────────────────────────────────────────────┘
+         │                    │                    │
+         ▼                    ▼                    ▼
+    Groq API            Groq API            Edge TTS (Free)
+   (Whisper)           (Llama 3.1)
 ```
 
 ## 🚀 Quick Start
 
 ### Prerequisites
 
-- Python 3.11+
+- Python 3.11+ (3.13 recommended)
 - Node.js 18+
 - Groq API key (free from [console.groq.com](https://console.groq.com))
 
@@ -61,55 +96,99 @@ cd backend
 python -m venv venv
 
 # Activate virtual environment
-# On Windows:
+# Windows:
 venv\Scripts\activate
-# On macOS/Linux:
+# macOS/Linux:
 source venv/bin/activate
 
 # Install dependencies
 pip install -r requirements.txt
 
 # Create .env file
-cp ../.env.example .env
+echo GROQ_API_KEY=your_groq_api_key_here > .env
 
-# Edit .env and add your Groq API key
-# GROQ_API_KEY=your_actual_api_key_here
+# Run the backend
+python run.py
 ```
+
+Backend will start at `http://localhost:8000`
 
 ### 3. Frontend Setup
 
 ```bash
-# Navigate to frontend directory (from project root)
+# Open a new terminal
 cd frontend
 
 # Install dependencies
 npm install
 
-# Create .env file
-cp .env.example .env
-
-# The default settings should work for local development
-```
-
-### 4. Run the Application
-
-**Terminal 1 - Backend:**
-```bash
-cd backend
-# Make sure virtual environment is activated
-uvicorn app.main:app --reload --host 0.0.0.0 --port 8000
-```
-
-**Terminal 2 - Frontend:**
-```bash
-cd frontend
+# Run the frontend
 npm run dev
 ```
 
-**Access the application:**
-- Frontend: http://localhost:5173
-- Backend API: http://localhost:8000
-- API Documentation: http://localhost:8000/docs
+Frontend will start at `http://localhost:5173`
+
+### 4. Access the Application
+
+Open your browser and navigate to `http://localhost:5173`
+
+## 📖 Usage Guide
+
+### Voice Chat
+1. Click the microphone button to start recording
+2. Speak your concerns or questions
+3. The bot will transcribe, process, and respond with voice
+4. Responses are personalized and empathetic
+
+### Coping Strategies
+1. Click the "Coping Strategies" button in the header or chat
+2. Browse 22 evidence-based exercises
+3. Filter by category (breathing, grounding, mindfulness, CBT, physical)
+4. Expand any strategy to see:
+   - Step-by-step instructions
+   - Video guide
+   - Scientific basis
+   - External resources
+
+### Find a Therapist
+1. Click the "Find a Therapist" button
+2. Use filters to search:
+   - **State**: Select from 9 major Indian states
+   - **Specialty**: Anxiety, depression, trauma, OCD, etc.
+   - **Language**: English, Hindi, Tamil, etc.
+   - **Max Price**: Set your budget
+   - **Online Only**: Filter for virtual consultations
+3. View detailed therapist profiles
+4. Contact directly via phone or website
+
+### Crisis Support
+- If crisis indicators are detected, you'll see prominent help buttons
+- Access Indian crisis helplines immediately:
+  - **AASRA**: 91-9820466726 (24/7)
+  - **Vandrevala Foundation**: 1860-266-2345 (24/7, Free)
+  - **Kiran**: 1800-599-0019 (24/7, Toll-free)
+  - **iCall**: 022-25521111 (Mon-Sat, 8 AM-10 PM)
+
+## 🛠️ Technology Stack
+
+### Backend
+- **FastAPI**: High-performance async web framework
+- **Groq SDK**: Ultra-fast AI inference (Whisper + Llama 3.1)
+- **Edge TTS**: Free, high-quality text-to-speech
+- **Python 3.13**: Latest Python with async support
+
+### Frontend
+- **React 18**: Modern UI library
+- **Vite**: Lightning-fast build tool
+- **React Router**: Client-side routing
+- **Tailwind CSS**: Utility-first styling
+- **Lucide React**: Beautiful icons
+- **Axios**: HTTP client
+
+### AI Models
+- **Whisper Large V3**: Speech-to-text (via Groq)
+- **Llama 3.1 8B**: LLM responses (via Groq)
+- **Edge TTS**: Text-to-speech (Microsoft)
 
 ## 📁 Project Structure
 
@@ -117,245 +196,192 @@ npm run dev
 mental-health-voice-bot/
 ├── backend/
 │   ├── app/
-│   │   ├── main.py              # FastAPI application entry
-│   │   ├── config.py            # Configuration and settings
+│   │   ├── main.py                 # FastAPI app entry
+│   │   ├── config.py               # Configuration
+│   │   ├── data/
+│   │   │   ├── coping_strategies.json    # 22 exercises
+│   │   │   └── therapists.json           # 27+ therapists
 │   │   ├── models/
-│   │   │   └── schemas.py       # Pydantic models
+│   │   │   ├── schemas.py          # Pydantic models
+│   │   │   └── emotion_schemas.py  # Emotion detection models
 │   │   ├── services/
-│   │   │   ├── stt_service.py   # Speech-to-text (Groq Whisper)
-│   │   │   ├── llm_service.py   # LLM responses (Groq Llama)
-│   │   │   ├── tts_service.py   # Text-to-speech (Edge TTS)
-│   │   │   └── therapy_service.py # Mental health logic
-│   │   └── routes/
-│   │       └── chat_routes.py   # API endpoints
+│   │   │   ├── stt_service.py      # Speech-to-text
+│   │   │   ├── llm_service.py      # LLM + crisis detection
+│   │   │   ├── tts_service.py      # Text-to-speech
+│   │   │   ├── therapy_service.py  # Mental health logic
+│   │   │   ├── emotion_service.py  # Emotion detection
+│   │   │   ├── coping_service.py   # Coping strategies
+│   │   │   └── therapist_service.py # Therapist search
+│   │   ├── routes/
+│   │   │   ├── chat_routes.py      # Chat API
+│   │   │   ├── coping_routes.py    # Coping API
+│   │   │   └── therapist_routes.py # Therapist API
+│   │   └── utils/
+│   │       └── ssml_builder.py     # Voice synthesis utils
 │   ├── requirements.txt
-│   └── Dockerfile
+│   ├── run.py                      # Server startup script
+│   └── .env                        # Environment variables
 ├── frontend/
 │   ├── src/
+│   │   ├── pages/
+│   │   │   ├── ChatPage.jsx        # Main chat interface
+│   │   │   ├── CopingStrategiesPage.jsx  # Strategies browser
+│   │   │   └── TherapistFinderPage.jsx   # Therapist search
 │   │   ├── components/
-│   │   │   ├── VoiceRecorder.jsx
-│   │   │   ├── ChatInterface.jsx
-│   │   │   └── LanguageSelector.jsx
+│   │   │   ├── VoiceRecorder.jsx   # Audio recording
+│   │   │   ├── ChatInterface.jsx   # Message display
+│   │   │   ├── LanguageSelector.jsx # Language picker
+│   │   │   └── ActionButtons.jsx   # Navigation buttons
 │   │   ├── services/
-│   │   │   └── api.js           # API client
-│   │   ├── App.jsx
-│   │   ├── main.jsx
-│   │   └── index.css
+│   │   │   └── api.js              # API client
+│   │   ├── App.jsx                 # Router setup
+│   │   └── main.jsx                # Entry point
 │   ├── package.json
 │   └── vite.config.js
-├── .env.example
-├── .gitignore
-├── render.yaml                   # Render.com deployment config
-└── README.md
+├── README.md
+├── QUICKSTART.md
+└── .gitignore
 ```
 
-## 🌐 API Endpoints
+## 🔧 API Endpoints
 
-### Health Check
-```
-GET /api/health
-```
+### Chat Endpoints
+- `POST /api/voice-chat` - Complete voice pipeline (STT → LLM → TTS)
+- `POST /api/chat` - Text-only chat
+- `POST /api/transcribe` - Speech-to-text only
+- `GET /api/languages` - Supported languages
+- `GET /api/health` - Health check
 
-### Get Supported Languages
-```
-GET /api/languages
-```
+### Coping Strategies Endpoints
+- `GET /api/coping/personalized` - Get personalized strategies
+- `GET /api/coping/all` - Get all strategies (with optional category filter)
+- `GET /api/coping/categories` - Get all categories
+- `GET /api/coping/strategy/{id}` - Get specific strategy
 
-### Voice Chat (Complete Pipeline)
-```
-POST /api/voice-chat
-Content-Type: multipart/form-data
+### Therapist Finder Endpoints
+- `GET /api/therapists/search` - Search therapists with filters
+- `GET /api/therapists/recommended` - Get AI-recommended therapists
+- `GET /api/therapists/states` - Get available states
+- `GET /api/therapists/specialties` - Get all specialties
+- `GET /api/therapists/therapist/{id}` - Get specific therapist
+- `GET /api/therapists/city/{city}` - Get therapists by city
 
-Parameters:
-- audio: Audio file (webm, mp3, wav)
-- language: Language code (optional)
-- session_id: Session identifier (optional)
-```
+## 🌐 Supported Languages
 
-### Text Chat
-```
-POST /api/chat
-Content-Type: application/json
+- 🇬🇧 English
+- 🇮🇳 Hindi (हिंदी)
+- 🇪🇸 Spanish (Español)
+- 🇫🇷 French (Français)
+- 🇩🇪 German (Deutsch)
+- 🇵🇹 Portuguese (Português)
+- 🇮🇹 Italian (Italiano)
+- 🇯🇵 Japanese (日本語)
+- 🇰🇷 Korean (한국어)
+- 🇨🇳 Chinese (中文)
 
-Body:
-{
-  "message": "I'm feeling anxious today",
-  "language": "en",
-  "conversation_history": []
-}
-```
+## 🎯 Key Features Explained
 
-### Transcribe Audio
-```
-POST /api/transcribe
-Content-Type: multipart/form-data
+### Emotion Detection
+- Analyzes user messages for emotional content
+- Detects: anxiety, depression, stress, anger, fear, happiness, etc.
+- Adjusts voice prosody (rate, pitch, volume) for empathetic responses
+- Identifies crisis situations automatically
 
-Parameters:
-- audio: Audio file
-- language: Language code
-```
+### Coping Strategies Database
+- **22 Evidence-Based Exercises**:
+  - 4-7-8 Breathing, Box Breathing, Alternate Nostril Breathing
+  - 5-4-3-2-1 Grounding, Ice Grounding, Sensory Object Grounding
+  - Body Scan, Loving-Kindness Meditation, RAIN Technique
+  - Thought Record, Worry Time, Problem-Solving
+  - Progressive Muscle Relaxation, Yoga, Walking, Stretching
+  - And more...
+- Each includes: steps, duration, difficulty, videos, scientific basis
 
-## 🚢 Deployment
+### Therapist Database
+- **27+ Verified Therapists** across India
+- **States Covered**: Maharashtra, Karnataka, Delhi, Tamil Nadu, West Bengal, Gujarat, Rajasthan, Uttar Pradesh, Telangana
+- **Specialties**: Anxiety, Depression, Trauma, OCD, Bipolar, Addiction, Child Psychiatry, ADHD, Eating Disorders, and more
+- **Verified Credentials**: MD, PhD, RCI registered professionals
 
-### Deploy to Render.com (Recommended - Free Tier)
+## 🚨 Crisis Resources (India)
 
-1. **Push your code to GitHub**
+### 24/7 Helplines
+- **AASRA**: 91-9820466726
+- **Vandrevala Foundation**: 1860-266-2345 / 1800-2333-330 (Toll-free)
+- **Kiran Mental Health**: 1800-599-0019 (Toll-free)
 
-2. **Sign up at [Render.com](https://render.com)**
+### Daytime Support
+- **iCall**: 022-25521111 (Mon-Sat, 8 AM-10 PM)
+- **NIMHANS**: 080-46110007 (Mon-Sat, 9 AM-5:30 PM)
+- **Fortis Stress Helpline**: 8376804102
 
-3. **Create a new Blueprint**
-   - Connect your GitHub repository
-   - Render will automatically detect the `render.yaml` file
+## 🔒 Privacy & Security
 
-4. **Add Environment Variables**
-   - In the backend service settings, add:
-     - `GROQ_API_KEY`: Your Groq API key
+- **No Data Storage**: Conversations are not saved to databases
+- **Session-Based**: Data exists only during your session
+- **No User Accounts**: Anonymous usage, no registration required
+- **HTTPS Ready**: Production deployment uses SSL/TLS
+- **API Key Security**: Environment variables for sensitive data
 
-5. **Deploy**
-   - Render will automatically build and deploy both services
-   - Frontend URL: `https://mental-health-voice-bot-frontend.onrender.com`
-   - Backend URL: `https://mental-health-voice-bot-backend.onrender.com`
+## 🚀 Deployment
 
-### Alternative: Deploy to Vercel (Frontend) + Render (Backend)
+### Render.com (Recommended)
 
-**Backend on Render:**
-```bash
-# Same as above for backend
-```
+1. **Backend**:
+   - Create new Web Service
+   - Connect GitHub repository
+   - Build: `pip install -r backend/requirements.txt`
+   - Start: `uvicorn app.main:app --host 0.0.0.0 --port $PORT`
+   - Add `GROQ_API_KEY` environment variable
 
-**Frontend on Vercel:**
-```bash
-cd frontend
-npm install -g vercel
-vercel
+2. **Frontend**:
+   - Create new Static Site
+   - Build: `cd frontend && npm install && npm run build`
+   - Publish: `frontend/dist`
+   - Add `VITE_API_URL` environment variable
 
-# Set environment variable:
-# VITE_API_URL=https://your-backend-url.onrender.com
-```
-
-## 🔑 Getting API Keys
-
-### Groq API Key (Required)
-1. Visit [console.groq.com](https://console.groq.com)
-2. Sign up for a free account
-3. Navigate to API Keys section
-4. Create a new API key
-5. Copy and add to your `.env` file
-
-**Free Tier Limits:**
-- 14,400 requests per day
-- 500+ tokens/second
-- More than enough for personal projects and portfolios
-
-## 🎨 Customization
-
-### Adding New Languages
-
-Edit `backend/app/config.py`:
-```python
-SUPPORTED_LANGUAGES: dict = {
-    "your_lang_code": {
-        "name": "Language Name",
-        "voice": "edge-tts-voice-code"
-    }
-}
-```
-
-Find Edge TTS voices: [Edge TTS Voice List](https://github.com/rany2/edge-tts#voice-list)
-
-### Customizing the System Prompt
-
-Edit `backend/app/services/llm_service.py` - modify the `system_prompt` variable.
-
-### Changing UI Colors
-
-Edit `frontend/tailwind.config.js` to customize the color scheme.
-
-## 🧪 Testing
-
-### Manual Testing Checklist
-
-- [ ] Record voice message in English
-- [ ] Test different languages (Hindi, Spanish, etc.)
-- [ ] Verify audio playback works
-- [ ] Test crisis keyword detection
-- [ ] Check mobile responsiveness
-- [ ] Verify conversation history
-- [ ] Test clear conversation feature
-
-### Testing Crisis Detection
-
-Try phrases like:
-- "I'm feeling suicidal"
-- "I want to hurt myself"
-
-The bot should respond with crisis resources.
-
-## 🛠️ Troubleshooting
-
-### Backend Issues
-
-**"GROQ_API_KEY is not set"**
-- Make sure you created a `.env` file in the backend directory
-- Verify the API key is correctly formatted
-
-**"Could not access microphone"**
-- Check browser permissions
-- Use HTTPS in production (required for microphone access)
-
-**"Error transcribing audio"**
-- Verify your Groq API key is valid
-- Check your internet connection
-- Ensure audio file is not corrupted
-
-### Frontend Issues
-
-**"Unable to connect to the server"**
-- Make sure backend is running on port 8000
-- Check `VITE_API_URL` in frontend `.env`
-- Verify CORS settings in `backend/app/config.py`
-
-**Audio not playing**
-- Check browser console for errors
-- Verify audio format is supported
-- Try a different browser
-
-## 📊 Performance
-
-- **Speech-to-Text**: ~0.5-1 second (Groq Whisper)
-- **LLM Response**: ~0.5-1 second (Groq Llama 3.1)
-- **Text-to-Speech**: ~1-2 seconds (Edge TTS)
-- **Total Pipeline**: ~2-4 seconds end-to-end
+See [DEPLOYMENT.md](DEPLOYMENT.md) for detailed instructions.
 
 ## 🤝 Contributing
 
-Contributions are welcome! Please feel free to submit a Pull Request.
+Contributions are welcome! Please read [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
 
-## ⚠️ Important Disclaimer
-
-This application is a support tool and **NOT a replacement for professional mental health care**. If you or someone you know is in crisis, please contact:
-
-- **US**: National Suicide Prevention Lifeline: 988
-- **US**: Crisis Text Line: Text HOME to 741741
-- **International**: [IASP Crisis Centers](https://www.iasp.info/resources/Crisis_Centres/)
+### Areas for Contribution
+- Additional coping strategies
+- More therapist profiles
+- Additional language support
+- UI/UX improvements
+- Bug fixes and optimizations
 
 ## 📝 License
 
-This project is licensed under the MIT License - see the LICENSE file for details.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## 🙏 Acknowledgments
 
-- [Groq](https://groq.com) for ultra-fast AI inference
-- [Edge TTS](https://github.com/rany2/edge-tts) for free text-to-speech
-- [FastAPI](https://fastapi.tiangolo.com/) for the backend framework
-- [React](https://react.dev/) and [Vite](https://vitejs.dev/) for the frontend
-- [Tailwind CSS](https://tailwindcss.com/) for styling
+- **Groq**: For providing ultra-fast AI inference
+- **Microsoft Edge TTS**: For free, high-quality text-to-speech
+- **Mental Health Professionals**: For guidance on crisis resources
+- **Open Source Community**: For the amazing tools and libraries
 
-## 📧 Contact
+## 📞 Support
 
-For questions or feedback, please open an issue on GitHub.
+- **Issues**: [GitHub Issues](https://github.com/yourusername/mental-health-voice-bot/issues)
+- **Discussions**: [GitHub Discussions](https://github.com/yourusername/mental-health-voice-bot/discussions)
+
+## ⚠️ Disclaimer
+
+This application is a support tool and **NOT a replacement for professional mental health care**. If you're experiencing a mental health crisis, please:
+
+1. Contact emergency services (112 in India)
+2. Call a crisis helpline (listed above)
+3. Visit the nearest hospital emergency department
+4. Reach out to a mental health professional
+
+Always consult with qualified healthcare providers for diagnosis and treatment.
 
 ---
 
-**Built with ❤️ for mental health awareness and support**
+**Built for mental health awareness and support**
 
+**Star ⭐ this repo if you find it helpful!**
