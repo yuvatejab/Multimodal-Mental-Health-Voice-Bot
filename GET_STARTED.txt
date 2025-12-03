@@ -1,0 +1,181 @@
+╔══════════════════════════════════════════════════════════════════════╗
+║                                                                      ║
+║          🎙️  MENTAL HEALTH VOICE BOT - GET STARTED  💙              ║
+║                                                                      ║
+╚══════════════════════════════════════════════════════════════════════╝
+
+Welcome! You're 5 minutes away from running your Mental Health Voice Bot.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+📋 PREREQUISITES
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+✓ Python 3.11 or higher
+✓ Node.js 18 or higher  
+✓ A Groq API key (free from console.groq.com)
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🚀 QUICK START (5 MINUTES)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+STEP 1: Get Your API Key
+─────────────────────────
+1. Go to: https://console.groq.com
+2. Sign up (it's free!)
+3. Create an API key
+4. Copy it (you'll need it in Step 3)
+
+STEP 2: Run Setup Script
+─────────────────────────
+Windows:
+  > setup.bat
+
+Mac/Linux:
+  $ chmod +x setup.sh
+  $ ./setup.sh
+
+This installs all dependencies automatically!
+
+STEP 3: Add Your API Key
+─────────────────────────
+1. Open: backend/.env
+2. Find: GROQ_API_KEY=
+3. Paste your API key after the =
+4. Save the file
+
+STEP 4: Start Backend
+─────────────────────────
+Open Terminal 1:
+
+Windows:
+  > cd backend
+  > venv\Scripts\activate
+  > uvicorn app.main:app --reload --host 0.0.0.0 --port 8000
+
+Mac/Linux:
+  $ cd backend
+  $ source venv/bin/activate
+  $ uvicorn app.main:app --reload --host 0.0.0.0 --port 8000
+
+✓ You should see: "Uvicorn running on http://0.0.0.0:8000"
+
+STEP 5: Start Frontend
+─────────────────────────
+Open Terminal 2:
+
+  $ cd frontend
+  $ npm run dev
+
+✓ You should see: "Local: http://localhost:5173/"
+
+STEP 6: Open in Browser
+─────────────────────────
+Go to: http://localhost:5173
+
+🎉 You're ready to go!
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🎯 FIRST TEST
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1. Click the microphone button 🎤
+2. Allow microphone access when prompted
+3. Say: "Hello, I'm feeling a bit stressed today"
+4. Click the microphone button again to stop
+5. Wait 2-4 seconds
+6. Listen to the AI's empathetic response! 🎧
+
+Try different languages using the language selector! 🌍
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+📚 DOCUMENTATION
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+README.md           - Complete documentation
+QUICKSTART.md       - Detailed setup guide
+DEPLOYMENT.md       - Deploy to production
+TESTING.md          - Testing guidelines
+PROJECT_SUMMARY.md  - Project overview
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🆘 TROUBLESHOOTING
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Problem: "GROQ_API_KEY is not set"
+Solution: Make sure you added your API key to backend/.env
+
+Problem: "Could not access microphone"
+Solution: Check browser permissions (click the lock icon in address bar)
+
+Problem: "Unable to connect to server"
+Solution: Make sure backend is running on port 8000
+
+Problem: Backend won't start
+Solution: Make sure virtual environment is activated
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🌐 DEPLOY TO PRODUCTION
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Ready to share with the world?
+
+1. Push code to GitHub
+2. Sign up at render.com (free)
+3. Create new Blueprint
+4. Connect your repo
+5. Add GROQ_API_KEY environment variable
+6. Deploy!
+
+See DEPLOYMENT.md for detailed instructions.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+✨ FEATURES
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+✓ Voice-first conversations
+✓ 10+ languages supported
+✓ Ultra-fast responses (<4 seconds)
+✓ Crisis detection & resources
+✓ Modern, calming UI
+✓ 100% free to run
+✓ Privacy-focused (no data storage)
+✓ Mobile-responsive
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+💡 TIPS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+• Speak naturally - the AI understands conversational language
+• Try different languages - switch anytime with the language selector
+• The bot remembers context within a conversation
+• Click "refresh" to start a new conversation
+• Check the API docs at: http://localhost:8000/docs
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+⚠️  IMPORTANT DISCLAIMER
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+This is a support tool, NOT a replacement for professional mental health
+care. If you're in crisis, please contact:
+
+US: 988 (Suicide Prevention Lifeline)
+US: Text HOME to 741741 (Crisis Text Line)
+International: https://www.iasp.info/resources/Crisis_Centres/
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Need help? Open an issue on GitHub or check the documentation!
+
+Built with ❤️ for mental health awareness and support
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
