@@ -4,6 +4,8 @@ import os
 from typing import Optional
 import edge_tts
 from ..config import settings
+from ..models.emotion_schemas import VoiceParameters
+from ..utils.ssml_builder import SSMLBuilder
 
 
 class TTSService:
@@ -12,11 +14,14 @@ class TTSService:
     def __init__(self):
         """Initialize the TTS service."""
         self.voices = settings.SUPPORTED_LANGUAGES
+        self.ssml_builder = SSMLBuilder()
     
     async def text_to_speech(
         self, 
         text: str, 
-        language: str = "en"
+        language: str = "en",
+        voice_params: Optional[VoiceParameters] = None,
+        use_ssml: bool = True
     ) -> str:
         """
         Convert text to speech and return as base64 encoded audio.
@@ -24,6 +29,8 @@ class TTSService:
         Args:
             text: Text to convert to speech
             language: Language code (e.g., 'en', 'hi')
+            voice_params: Optional voice parameters for emotional speech
+            use_ssml: Whether to use SSML for natural speech
             
         Returns:
             Base64 encoded audio data
@@ -45,18 +52,57 @@ class TTSService:
         # Get voices to try for this language
         voices_to_try = voice_options.get(language, ["en-US-AriaNeural"])
         
+        # Use default voice parameters if not provided
+        if voice_params is None:
+            voice_params = VoiceParameters()
+        
         last_error = None
         for voice in voices_to_try:
             try:
                 print(f"Trying voice: {voice} for language: {language}")
+                
+                # Prepare text for TTS - use plain text (SSML not supported by edge-tts library)
+                tts_text = text
+                
+                # Calculate rate adjustment for Edge TTS (supports rate as string like "+20%" or "-10%")
+                if voice_params:
+                    # Convert rate multiplier to percentage
+                    rate_percent = int((voice_params.rate - 1.0) * 100)
+                    rate_str = f"{rate_percent:+d}%" if rate_percent != 0 else "+0%"
+                    
+                    # Convert pitch - Edge TTS expects format like "+5Hz" or "-10Hz", not percentages
+                    # Extract the number from pitch string (e.g., "-3%" -> -3)
+                    try:
+                        pitch_value = int(voice_params.pitch.replace("%", ""))
+                        # Convert percentage to Hz (rough approximation: 1% ≈ 5Hz)
+                        pitch_hz = pitch_value * 5
+                        pitch_str = f"{pitch_hz:+d}Hz" if pitch_hz != 0 else "+0Hz"
+                    except:
+                        pitch_str = "+0Hz"
+                    
+                    # Convert volume to percentage
+                    volume_map = {"soft": "-20%", "medium": "+0%", "loud": "+20%"}
+                    volume_str = volume_map.get(voice_params.volume, "+0%")
+                    
+                    print(f"Using emotional voice: style={voice_params.style}, rate={rate_str}, pitch={pitch_str}, volume={volume_str}")
+                else:
+                    rate_str = "+0%"
+                    pitch_str = "+0Hz"
+                    volume_str = "+0%"
                 
                 # Create a temporary file for the audio
                 with tempfile.NamedTemporaryFile(delete=False, suffix=".mp3") as temp_file:
                     temp_file_path = temp_file.name
                 
                 try:
-                    # Generate speech using Edge TTS
-                    communicate = edge_tts.Communicate(text, voice)
+                    # Generate speech using Edge TTS with prosody parameters
+                    communicate = edge_tts.Communicate(
+                        tts_text, 
+                        voice,
+                        rate=rate_str,
+                        pitch=pitch_str,
+                        volume=volume_str
+                    )
                     await communicate.save(temp_file_path)
                     
                     # Read the audio file and encode to base64

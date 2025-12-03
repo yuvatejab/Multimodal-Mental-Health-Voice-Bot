@@ -3,6 +3,7 @@ from datetime import datetime
 from .llm_service import LLMService
 from .stt_service import STTService
 from .tts_service import TTSService
+from .emotion_service import EmotionService
 
 
 class TherapyService:
@@ -16,6 +17,7 @@ class TherapyService:
         self.llm_service = LLMService()
         self.stt_service = STTService()
         self.tts_service = TTSService()
+        self.emotion_service = EmotionService()
         
         # In-memory session storage (in production, use Redis or database)
         self.sessions: Dict[str, Dict] = {}
@@ -180,7 +182,16 @@ class TherapyService:
             print(f"User selected language: {language}")
             print(f"Final language for TTS: {detected_language}")
             
-            # Step 2: Process the message through therapy logic
+            # Step 2: Analyze emotion in user's message
+            try:
+                emotion_analysis = await self.emotion_service.analyze_emotion(transcribed_text)
+                print(f"Detected emotion: {emotion_analysis.primary_emotion} (intensity: {emotion_analysis.intensity})")
+                print(f"Recommended style: {emotion_analysis.recommended_style}")
+            except Exception as e:
+                print(f"Emotion analysis failed: {str(e)}, using neutral")
+                emotion_analysis = None
+            
+            # Step 3: Process the message through therapy logic
             processing_result = await self.process_message(
                 message=transcribed_text,
                 session_id=session_id,
@@ -190,13 +201,22 @@ class TherapyService:
             response_text = processing_result["response"]
             is_crisis = processing_result["is_crisis"]
             
-            # Step 3: Convert response to speech
+            # Step 4: Convert emotion to voice parameters
+            if emotion_analysis:
+                voice_params = self.emotion_service.emotion_to_voice_parameters(emotion_analysis)
+            else:
+                voice_params = None
+            
+            # Step 5: Convert response to speech with emotional voice
             audio_base64 = await self.tts_service.text_to_speech(
                 text=response_text,
-                language=detected_language
+                language=detected_language,
+                voice_params=voice_params,
+                use_ssml=True
             )
             
-            return {
+            # Prepare response with emotion data
+            response_data = {
                 "transcription": transcribed_text,
                 "response": response_text,
                 "audio_base64": audio_base64,
@@ -204,6 +224,16 @@ class TherapyService:
                 "is_crisis": is_crisis,
                 "language": detected_language
             }
+            
+            # Add emotion data if available
+            if emotion_analysis:
+                response_data["emotion"] = {
+                    "primary": emotion_analysis.primary_emotion,
+                    "intensity": emotion_analysis.intensity,
+                    "style_used": voice_params.style if voice_params else "neutral"
+                }
+            
+            return response_data
             
         except Exception as e:
             raise Exception(f"Error processing voice message: {str(e)}")
