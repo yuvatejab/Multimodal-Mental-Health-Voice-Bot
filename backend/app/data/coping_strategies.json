@@ -1,0 +1,810 @@
+{
+  "strategies": [
+    {
+      "id": "breathing-478",
+      "name": "4-7-8 Breathing Technique",
+      "name_hi": "4-7-8 श्वास तकनीक",
+      "category": "breathing",
+      "difficulty": "easy",
+      "duration_minutes": 5,
+      "description": "A powerful breathing technique that helps reduce anxiety and promote relaxation by regulating your nervous system.",
+      "description_hi": "एक शक्तिशाली श्वास तकनीक जो आपके तंत्रिका तंत्र को नियंत्रित करके चिंता को कम करने और विश्राम को बढ़ावा देने में मदद करती है।",
+      "when_to_use": ["anxiety", "stress", "panic", "insomnia"],
+      "steps": [
+        "Sit comfortably with your back straight",
+        "Place the tip of your tongue against the ridge behind your upper front teeth",
+        "Exhale completely through your mouth, making a whoosh sound",
+        "Close your mouth and inhale quietly through your nose for 4 counts",
+        "Hold your breath for 7 counts",
+        "Exhale completely through your mouth for 8 counts, making a whoosh sound",
+        "Repeat this cycle 3-4 times"
+      ],
+      "steps_hi": [
+        "अपनी पीठ सीधी रखते हुए आराम से बैठें",
+        "अपनी जीभ की नोक को ऊपरी सामने के दांतों के पीछे की रिज के खिलाफ रखें",
+        "अपने मुंह से पूरी तरह से सांस छोड़ें, एक हूश ध्वनि बनाते हुए",
+        "अपना मुंह बंद करें और 4 गिनती के लिए अपनी नाक से चुपचाप सांस लें",
+        "7 गिनती के लिए अपनी सांस रोकें",
+        "8 गिनती के लिए अपने मुंह से पूरी तरह से सांस छोड़ें, एक हूश ध्वनि बनाते हुए",
+        "इस चक्र को 3-4 बार दोहराएं"
+      ],
+      "video_url": "https://www.youtube.com/watch?v=YRPh_GaiL8s",
+      "scientific_basis": "Developed by Dr. Andrew Weil, this technique activates the parasympathetic nervous system, reducing cortisol and promoting calmness.",
+      "external_links": [
+        "https://www.healthline.com/health/4-7-8-breathing"
+      ]
+    },
+    {
+      "id": "breathing-box",
+      "name": "Box Breathing (Square Breathing)",
+      "name_hi": "बॉक्स ब्रीदिंग (स्क्वायर ब्रीदिंग)",
+      "category": "breathing",
+      "difficulty": "easy",
+      "duration_minutes": 5,
+      "description": "Used by Navy SEALs to stay calm under pressure. Equal counts of inhaling, holding, exhaling, and holding create a 'box' pattern.",
+      "description_hi": "दबाव में शांत रहने के लिए नेवी सील्स द्वारा उपयोग किया जाता है। सांस लेने, रोकने, छोड़ने और रोकने की समान गिनती एक 'बॉक्स' पैटर्न बनाती है।",
+      "when_to_use": ["stress", "anxiety", "anger", "focus"],
+      "steps": [
+        "Sit upright in a comfortable position",
+        "Exhale all the air from your lungs",
+        "Inhale slowly through your nose for 4 counts",
+        "Hold your breath for 4 counts",
+        "Exhale slowly through your mouth for 4 counts",
+        "Hold your breath (empty lungs) for 4 counts",
+        "Repeat for 5-10 minutes"
+      ],
+      "steps_hi": [
+        "आराम से सीधे बैठें",
+        "अपने फेफड़ों से सारी हवा बाहर निकालें",
+        "4 गिनती के लिए अपनी नाक से धीरे-धीरे सांस लें",
+        "4 गिनती के लिए अपनी सांस रोकें",
+        "4 गिनती के लिए अपने मुंह से धीरे-धीरे सांस छोड़ें",
+        "4 गिनती के लिए अपनी सांस रोकें (खाली फेफड़े)",
+        "5-10 मिनट के लिए दोहराएं"
+      ],
+      "video_url": "https://www.youtube.com/watch?v=tEmt1Znux58",
+      "scientific_basis": "Regulates the autonomic nervous system, reduces stress hormones, and improves focus and emotional regulation.",
+      "external_links": [
+        "https://www.medicalnewstoday.com/articles/box-breathing"
+      ]
+    },
+    {
+      "id": "grounding-54321",
+      "name": "5-4-3-2-1 Grounding Technique",
+      "name_hi": "5-4-3-2-1 ग्राउंडिंग तकनीक",
+      "category": "grounding",
+      "difficulty": "easy",
+      "duration_minutes": 5,
+      "description": "A sensory awareness technique that helps you stay present and manage anxiety by engaging all five senses.",
+      "description_hi": "एक संवेदी जागरूकता तकनीक जो आपको वर्तमान में रहने और सभी पांच इंद्रियों को संलग्न करके चिंता को प्रबंधित करने में मदद करती है।",
+      "when_to_use": ["anxiety", "panic", "dissociation", "overwhelm"],
+      "steps": [
+        "Acknowledge 5 things you can SEE around you",
+        "Acknowledge 4 things you can TOUCH or feel",
+        "Acknowledge 3 things you can HEAR",
+        "Acknowledge 2 things you can SMELL",
+        "Acknowledge 1 thing you can TASTE",
+        "Take a deep breath and notice how you feel"
+      ],
+      "steps_hi": [
+        "5 चीजों को स्वीकार करें जो आप अपने चारों ओर देख सकते हैं",
+        "4 चीजों को स्वीकार करें जिन्हें आप छू या महसूस कर सकते हैं",
+        "3 चीजों को स्वीकार करें जिन्हें आप सुन सकते हैं",
+        "2 चीजों को स्वीकार करें जिन्हें आप सूंघ सकते हैं",
+        "1 चीज को स्वीकार करें जिसे आप चख सकते हैं",
+        "एक गहरी सांस लें और ध्यान दें कि आप कैसा महसूस करते हैं"
+      ],
+      "video_url": "https://www.youtube.com/watch?v=30VMIEmA114",
+      "scientific_basis": "Grounding techniques interrupt anxiety spirals by redirecting attention to the present moment, engaging the prefrontal cortex.",
+      "external_links": [
+        "https://www.urmc.rochester.edu/behavioral-health-partners/bhp-blog/april-2018/5-4-3-2-1-coping-technique-for-anxiety.aspx"
+      ]
+    },
+    {
+      "id": "progressive-relaxation",
+      "name": "Progressive Muscle Relaxation (PMR)",
+      "name_hi": "प्रगतिशील मांसपेशी विश्राम (PMR)",
+      "category": "physical",
+      "difficulty": "medium",
+      "duration_minutes": 15,
+      "description": "Systematically tense and relax different muscle groups to reduce physical tension and promote deep relaxation.",
+      "description_hi": "शारीरिक तनाव को कम करने और गहरी विश्राम को बढ़ावा देने के लिए व्यवस्थित रूप से विभिन्न मांसपेशी समूहों को तनाव और आराम दें।",
+      "when_to_use": ["stress", "anxiety", "insomnia", "physical_tension"],
+      "steps": [
+        "Find a quiet, comfortable place to sit or lie down",
+        "Start with your feet: tense the muscles for 5 seconds, then release for 10 seconds",
+        "Move to your calves, thighs, buttocks, stomach, chest, arms, hands, neck, and face",
+        "For each muscle group: tense, hold, then release",
+        "Notice the difference between tension and relaxation",
+        "Breathe deeply throughout the exercise",
+        "End with a few minutes of calm breathing"
+      ],
+      "steps_hi": [
+        "बैठने या लेटने के लिए एक शांत, आरामदायक जगह खोजें",
+        "अपने पैरों से शुरू करें: 5 सेकंड के लिए मांसपेशियों को तनाव दें, फिर 10 सेकंड के लिए छोड़ दें",
+        "अपने बछड़ों, जांघों, नितंबों, पेट, छाती, बाहों, हाथों, गर्दन और चेहरे पर जाएं",
+        "प्रत्येक मांसपेशी समूह के लिए: तनाव, पकड़, फिर छोड़ें",
+        "तनाव और विश्राम के बीच अंतर पर ध्यान दें",
+        "पूरे व्यायाम में गहरी सांस लें",
+        "शांत श्वास के कुछ मिनटों के साथ समाप्त करें"
+      ],
+      "video_url": "https://www.youtube.com/watch?v=ihO02wUzgkc",
+      "scientific_basis": "Developed by Edmund Jacobson in the 1920s, PMR reduces anxiety and improves sleep by releasing muscular tension.",
+      "external_links": [
+        "https://www.anxietycanada.com/articles/how-to-do-progressive-muscle-relaxation/"
+      ]
+    },
+    {
+      "id": "mindfulness-body-scan",
+      "name": "Body Scan Meditation",
+      "name_hi": "बॉडी स्कैन मेडिटेशन",
+      "category": "mindfulness",
+      "difficulty": "medium",
+      "duration_minutes": 10,
+      "description": "A mindfulness practice that involves mentally scanning your body from head to toe, noticing sensations without judgment.",
+      "description_hi": "एक माइंडफुलनेस अभ्यास जिसमें आपके शरीर को सिर से पैर तक मानसिक रूप से स्कैन करना शामिल है, बिना निर्णय के संवेदनाओं को देखना।",
+      "when_to_use": ["stress", "anxiety", "chronic_pain", "sleep"],
+      "steps": [
+        "Lie down or sit comfortably in a quiet space",
+        "Close your eyes and take a few deep breaths",
+        "Start at the top of your head, noticing any sensations",
+        "Slowly move your attention down through your face, neck, shoulders",
+        "Continue through your chest, arms, hands, stomach, hips, legs, and feet",
+        "Notice tension, warmth, coolness, tingling, or numbness without trying to change it",
+        "If your mind wanders, gently bring it back to the body part you're focusing on",
+        "End by taking a few deep breaths and slowly opening your eyes"
+      ],
+      "steps_hi": [
+        "एक शांत जगह में लेट जाएं या आराम से बैठें",
+        "अपनी आंखें बंद करें और कुछ गहरी सांसें लें",
+        "अपने सिर के शीर्ष पर शुरू करें, किसी भी संवेदना को देखते हुए",
+        "धीरे-धीरे अपना ध्यान अपने चेहरे, गर्दन, कंधों के माध्यम से नीचे ले जाएं",
+        "अपनी छाती, बाहों, हाथों, पेट, कूल्हों, पैरों और पैरों के माध्यम से जारी रखें",
+        "तनाव, गर्मी, ठंडक, झुनझुनी, या सुन्नता को बदलने की कोशिश किए बिना देखें",
+        "यदि आपका मन भटकता है, तो धीरे से इसे उस शरीर के हिस्से पर वापस लाएं जिस पर आप ध्यान केंद्रित कर रहे हैं",
+        "कुछ गहरी सांसें लेकर और धीरे-धीरे अपनी आंखें खोलकर समाप्त करें"
+      ],
+      "video_url": "https://www.youtube.com/watch?v=15q-N-_kkrU",
+      "scientific_basis": "Research shows body scan meditation reduces stress, improves body awareness, and helps manage chronic pain.",
+      "external_links": [
+        "https://www.mindful.org/the-body-scan-practice/"
+      ]
+    },
+    {
+      "id": "cbt-thought-record",
+      "name": "Thought Record (CBT Technique)",
+      "name_hi": "विचार रिकॉर्ड (CBT तकनीक)",
+      "category": "cbt",
+      "difficulty": "medium",
+      "duration_minutes": 10,
+      "description": "A cognitive behavioral therapy technique to identify and challenge negative thought patterns.",
+      "description_hi": "नकारात्मक विचार पैटर्न की पहचान करने और चुनौती देने के लिए एक संज्ञानात्मक व्यवहार थेरेपी तकनीक।",
+      "when_to_use": ["depression", "anxiety", "negative_thinking", "rumination"],
+      "steps": [
+        "Write down the situation that triggered negative emotions",
+        "Identify the automatic negative thought that arose",
+        "Rate the intensity of your emotion (0-100%)",
+        "List evidence that supports this thought",
+        "List evidence that contradicts this thought",
+        "Create a more balanced, realistic thought",
+        "Re-rate the intensity of your emotion",
+        "Notice if your perspective has shifted"
+      ],
+      "steps_hi": [
+        "उस स्थिति को लिखें जिसने नकारात्मक भावनाओं को ट्रिगर किया",
+        "उत्पन्न हुए स्वचालित नकारात्मक विचार की पहचान करें",
+        "अपनी भावना की तीव्रता को रेट करें (0-100%)",
+        "इस विचार का समर्थन करने वाले साक्ष्य सूचीबद्ध करें",
+        "इस विचार का खंडन करने वाले साक्ष्य सूचीबद्ध करें",
+        "एक अधिक संतुलित, यथार्थवादी विचार बनाएं",
+        "अपनी भावना की तीव्रता को फिर से रेट करें",
+        "ध्यान दें कि क्या आपका दृष्टिकोण बदल गया है"
+      ],
+      "video_url": "https://www.youtube.com/watch?v=o0YMMaUWHBQ",
+      "scientific_basis": "CBT thought records are evidence-based tools that help restructure cognitive distortions and reduce symptoms of depression and anxiety.",
+      "external_links": [
+        "https://www.getselfhelp.co.uk/thought-record-sheets/"
+      ]
+    },
+    {
+      "id": "mindfulness-breathing-space",
+      "name": "Three-Minute Breathing Space",
+      "name_hi": "तीन मिनट का श्वास स्थान",
+      "category": "mindfulness",
+      "difficulty": "easy",
+      "duration_minutes": 3,
+      "description": "A quick mindfulness exercise to create space between you and your stressful thoughts.",
+      "description_hi": "आपके और आपके तनावपूर्ण विचारों के बीच स्थान बनाने के लिए एक त्वरित माइंडफुलनेस व्यायाम।",
+      "when_to_use": ["stress", "overwhelm", "anxiety", "busy_moments"],
+      "steps": [
+        "Minute 1 - AWARENESS: Notice what's happening right now. What thoughts, feelings, and sensations are present?",
+        "Minute 2 - FOCUS: Bring your attention to your breath. Follow each inhale and exhale.",
+        "Minute 3 - EXPAND: Expand your awareness to your whole body. Notice your posture, any tension, and your connection to the ground.",
+        "Return to your day with renewed presence"
+      ],
+      "steps_hi": [
+        "मिनट 1 - जागरूकता: ध्यान दें कि अभी क्या हो रहा है। कौन से विचार, भावनाएं और संवेदनाएं मौजूद हैं?",
+        "मिनट 2 - फोकस: अपना ध्यान अपनी सांस पर लाएं। प्रत्येक सांस लेने और छोड़ने का पालन करें।",
+        "मिनट 3 - विस्तार: अपनी जागरूकता को अपने पूरे शरीर तक विस्तारित करें। अपनी मुद्रा, किसी भी तनाव, और जमीन से अपने संबंध पर ध्यान दें।",
+        "नई उपस्थिति के साथ अपने दिन में लौटें"
+      ],
+      "video_url": "https://www.youtube.com/watch?v=Z76QLnU5mXA",
+      "scientific_basis": "Part of Mindfulness-Based Cognitive Therapy (MBCT), this practice helps prevent relapse in depression and manages anxiety.",
+      "external_links": [
+        "https://www.oxfordmindfulness.org/news/three-minute-breathing-space/"
+      ]
+    },
+    {
+      "id": "physical-walking",
+      "name": "Mindful Walking",
+      "name_hi": "माइंडफुल वॉकिंग",
+      "category": "physical",
+      "difficulty": "easy",
+      "duration_minutes": 15,
+      "description": "Combine gentle exercise with mindfulness by paying attention to the physical sensations of walking.",
+      "description_hi": "चलने की शारीरिक संवेदनाओं पर ध्यान देकर कोमल व्यायाम को माइंडफुलनेस के साथ मिलाएं।",
+      "when_to_use": ["stress", "anxiety", "depression", "restlessness"],
+      "steps": [
+        "Find a quiet place to walk (indoors or outdoors)",
+        "Stand still and take a few deep breaths",
+        "Begin walking slowly, noticing the sensation of your feet touching the ground",
+        "Pay attention to the movement of your legs, the swing of your arms",
+        "Notice your surroundings without judgment - sights, sounds, smells",
+        "If your mind wanders, gently bring attention back to the physical act of walking",
+        "Walk for 10-15 minutes at a comfortable pace",
+        "End by standing still and taking a few deep breaths"
+      ],
+      "steps_hi": [
+        "चलने के लिए एक शांत जगह खोजें (घर के अंदर या बाहर)",
+        "स्थिर खड़े हों और कुछ गहरी सांसें लें",
+        "धीरे-धीरे चलना शुरू करें, अपने पैरों के जमीन को छूने की संवेदना पर ध्यान दें",
+        "अपने पैरों की गति, अपनी बाहों के झूलने पर ध्यान दें",
+        "बिना निर्णय के अपने परिवेश पर ध्यान दें - दृश्य, ध्वनियां, गंध",
+        "यदि आपका मन भटकता है, तो धीरे से ध्यान को चलने के शारीरिक कार्य पर वापस लाएं",
+        "आरामदायक गति से 10-15 मिनट चलें",
+        "स्थिर खड़े होकर और कुछ गहरी सांसें लेकर समाप्त करें"
+      ],
+      "video_url": "https://www.youtube.com/watch?v=vAHvUo8_naU",
+      "scientific_basis": "Walking meditation combines physical activity with mindfulness, reducing stress and improving mood through both exercise and present-moment awareness.",
+      "external_links": [
+        "https://www.healthline.com/health/walking-meditation"
+      ]
+    },
+    {
+      "id": "gratitude-journal",
+      "name": "Gratitude Journaling",
+      "name_hi": "कृतज्ञता जर्नलिंग",
+      "category": "cbt",
+      "difficulty": "easy",
+      "duration_minutes": 5,
+      "description": "Write down things you're grateful for to shift focus from negative to positive aspects of life.",
+      "description_hi": "जीवन के नकारात्मक से सकारात्मक पहलुओं पर ध्यान केंद्रित करने के लिए उन चीजों को लिखें जिनके लिए आप आभारी हैं।",
+      "when_to_use": ["depression", "negative_thinking", "low_mood", "daily_practice"],
+      "steps": [
+        "Set aside 5 minutes each day (morning or evening)",
+        "Write down 3-5 things you're grateful for today",
+        "Be specific - instead of 'family', write 'my sister called to check on me'",
+        "Include small things - a good cup of tea, sunshine, a kind word",
+        "Notice how you feel as you write",
+        "Read past entries when feeling down",
+        "Make it a daily habit"
+      ],
+      "steps_hi": [
+        "हर दिन 5 मिनट अलग रखें (सुबह या शाम)",
+        "आज आप जिन 3-5 चीजों के लिए आभारी हैं, उन्हें लिखें",
+        "विशिष्ट रहें - 'परिवार' के बजाय, 'मेरी बहन ने मुझे जांचने के लिए फोन किया' लिखें",
+        "छोटी चीजें शामिल करें - चाय का एक अच्छा कप, धूप, एक दयालु शब्द",
+        "ध्यान दें कि आप लिखते समय कैसा महसूस करते हैं",
+        "निराश महसूस करने पर पिछली प्रविष्टियां पढ़ें",
+        "इसे एक दैनिक आदत बनाएं"
+      ],
+      "video_url": "https://www.youtube.com/watch?v=WPni755-Krg",
+      "scientific_basis": "Research shows gratitude journaling increases happiness, reduces depression, and improves sleep quality.",
+      "external_links": [
+        "https://positivepsychology.com/gratitude-journal/"
+      ]
+    },
+    {
+      "id": "physical-yoga",
+      "name": "Basic Yoga Sequence for Anxiety",
+      "name_hi": "चिंता के लिए बुनियादी योग अनुक्रम",
+      "category": "physical",
+      "difficulty": "easy",
+      "duration_minutes": 15,
+      "description": "Gentle yoga poses that calm the nervous system and release physical tension.",
+      "description_hi": "कोमल योग मुद्राएं जो तंत्रिका तंत्र को शांत करती हैं और शारीरिक तनाव को मुक्त करती हैं।",
+      "when_to_use": ["anxiety", "stress", "physical_tension", "morning_routine"],
+      "steps": [
+        "Child's Pose (Balasana) - 2 minutes: Kneel and fold forward, arms extended",
+        "Cat-Cow Pose (Marjaryasana-Bitilasana) - 1 minute: Flow between arching and rounding your back",
+        "Downward Dog (Adho Mukha Svanasana) - 1 minute: Inverted V-shape, heels toward ground",
+        "Standing Forward Bend (Uttanasana) - 1 minute: Fold forward from standing, let head hang",
+        "Legs Up the Wall (Viparita Karani) - 5 minutes: Lie on back with legs up against wall",
+        "Corpse Pose (Savasana) - 5 minutes: Lie flat, arms at sides, focus on breath",
+        "Breathe deeply throughout, moving slowly and mindfully"
+      ],
+      "steps_hi": [
+        "चाइल्ड पोज (बालासन) - 2 मिनट: घुटने टेकें और आगे मुड़ें, बाहें विस्तारित",
+        "कैट-काउ पोज (मार्जरीयासन-बिटिलासन) - 1 मिनट: अपनी पीठ को मोड़ने और गोल करने के बीच प्रवाह",
+        "डाउनवर्ड डॉग (अधो मुख श्वानासन) - 1 मिनट: उल्टा V-आकार, एड़ी जमीन की ओर",
+        "स्टैंडिंग फॉरवर्ड बेंड (उत्तानासन) - 1 मिनट: खड़े होने से आगे मुड़ें, सिर को लटकने दें",
+        "लेग्स अप द वॉल (विपरीत करणी) - 5 मिनट: पीठ के बल लेटें, पैर दीवार के खिलाफ ऊपर",
+        "कॉर्प्स पोज (शवासन) - 5 मिनट: सपाट लेटें, बाजू बगल में, सांस पर ध्यान केंद्रित करें",
+        "पूरे समय गहरी सांस लें, धीरे-धीरे और ध्यान से चलें"
+      ],
+      "video_url": "https://www.youtube.com/watch?v=hJbRpHZr_d0",
+      "scientific_basis": "Yoga reduces cortisol levels, activates the parasympathetic nervous system, and has been shown to reduce anxiety symptoms.",
+      "external_links": [
+        "https://www.health.harvard.edu/mind-and-mood/yoga-for-anxiety-and-depression"
+      ]
+    },
+    {
+      "id": "grounding-ice",
+      "name": "Ice Grounding Technique",
+      "name_hi": "आइस ग्राउंडिंग तकनीक",
+      "category": "grounding",
+      "difficulty": "easy",
+      "duration_minutes": 2,
+      "description": "Use cold sensation to quickly ground yourself during intense anxiety or panic.",
+      "description_hi": "तीव्र चिंता या घबराहट के दौरान खुद को जल्दी से ग्राउंड करने के लिए ठंडी संवेदना का उपयोग करें।",
+      "when_to_use": ["panic", "anxiety", "dissociation", "self_harm_urges"],
+      "steps": [
+        "Hold an ice cube in your hand",
+        "Focus all your attention on the cold sensation",
+        "Notice how it feels - the temperature, the wetness, the numbing",
+        "Move the ice cube to different parts of your hand",
+        "Breathe slowly as you hold the ice",
+        "Continue until you feel more present (usually 30-60 seconds)",
+        "Alternatively: splash cold water on your face or take a cold shower"
+      ],
+      "steps_hi": [
+        "अपने हाथ में एक बर्फ का टुकड़ा पकड़ें",
+        "अपना सारा ध्यान ठंडी संवेदना पर केंद्रित करें",
+        "ध्यान दें कि यह कैसा लगता है - तापमान, गीलापन, सुन्नता",
+        "बर्फ के टुकड़े को अपने हाथ के विभिन्न हिस्सों में ले जाएं",
+        "बर्फ पकड़ते समय धीरे-धीरे सांस लें",
+        "तब तक जारी रखें जब तक आप अधिक उपस्थित महसूस न करें (आमतौर पर 30-60 सेकंड)",
+        "वैकल्पिक रूप से: अपने चेहरे पर ठंडा पानी छिड़कें या ठंडा स्नान करें"
+      ],
+      "video_url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+      "scientific_basis": "Cold temperature activates the dive reflex, slowing heart rate and calming the nervous system. Used in Dialectical Behavior Therapy (DBT).",
+      "external_links": [
+        "https://www.dbtselfhelp.com/dbt-skills-list/distress-tolerance/tipp/"
+      ]
+    },
+    {
+      "id": "cbt-worry-time",
+      "name": "Scheduled Worry Time",
+      "name_hi": "निर्धारित चिंता समय",
+      "category": "cbt",
+      "difficulty": "medium",
+      "duration_minutes": 15,
+      "description": "Set aside a specific time each day to worry, freeing the rest of your day from anxious thoughts.",
+      "description_hi": "चिंता करने के लिए हर दिन एक विशिष्ट समय अलग रखें, अपने बाकी दिन को चिंतित विचारों से मुक्त करें।",
+      "when_to_use": ["anxiety", "rumination", "worry", "obsessive_thoughts"],
+      "steps": [
+        "Choose a 15-minute time slot each day (not before bed)",
+        "When worries arise during the day, write them down and postpone them",
+        "Tell yourself 'I'll think about this during worry time'",
+        "During your scheduled time, review your worry list",
+        "For each worry, ask: Is this in my control? What action can I take?",
+        "Take action on controllable worries, let go of uncontrollable ones",
+        "When time is up, close the worry session and move on",
+        "Over time, you'll find many worries resolve themselves"
+      ],
+      "steps_hi": [
+        "हर दिन 15 मिनट का समय स्लॉट चुनें (सोने से पहले नहीं)",
+        "जब दिन के दौरान चिंताएं उत्पन्न होती हैं, तो उन्हें लिख लें और स्थगित कर दें",
+        "अपने आप से कहें 'मैं चिंता के समय के दौरान इसके बारे में सोचूंगा'",
+        "अपने निर्धारित समय के दौरान, अपनी चिंता सूची की समीक्षा करें",
+        "प्रत्येक चिंता के लिए पूछें: क्या यह मेरे नियंत्रण में है? मैं क्या कार्रवाई कर सकता हूं?",
+        "नियंत्रणीय चिंताओं पर कार्रवाई करें, अनियंत्रणीय को छोड़ दें",
+        "जब समय समाप्त हो जाए, तो चिंता सत्र बंद करें और आगे बढ़ें",
+        "समय के साथ, आप पाएंगे कि कई चिंताएं खुद ही हल हो जाती हैं"
+      ],
+      "video_url": "https://www.youtube.com/watch?v=k5RH3BdXDOY",
+      "scientific_basis": "This CBT technique helps contain worry, reducing its interference with daily life and improving anxiety symptoms.",
+      "external_links": [
+        "https://www.cci.health.wa.gov.au/Resources/Looking-After-Yourself/Worry-and-Rumination"
+      ]
+    },
+    {
+      "id": "mindfulness-loving-kindness",
+      "name": "Loving-Kindness Meditation (Metta)",
+      "name_hi": "प्रेम-दया ध्यान (मेट्टा)",
+      "category": "mindfulness",
+      "difficulty": "medium",
+      "duration_minutes": 10,
+      "description": "Cultivate compassion for yourself and others through guided phrases of goodwill.",
+      "description_hi": "सद्भावना के निर्देशित वाक्यांशों के माध्यम से अपने और दूसरों के लिए करुणा विकसित करें।",
+      "when_to_use": ["depression", "low_self_esteem", "anger", "relationship_issues"],
+      "steps": [
+        "Sit comfortably and close your eyes",
+        "Start with yourself: 'May I be happy. May I be healthy. May I be safe. May I live with ease.'",
+        "Repeat these phrases slowly, feeling the intention",
+        "Extend to a loved one: 'May you be happy. May you be healthy. May you be safe. May you live with ease.'",
+        "Extend to a neutral person (acquaintance)",
+        "Extend to a difficult person (if ready)",
+        "Extend to all beings: 'May all beings be happy, healthy, safe, and live with ease.'",
+        "Sit quietly for a moment, noticing how you feel"
+      ],
+      "steps_hi": [
+        "आराम से बैठें और अपनी आंखें बंद करें",
+        "अपने साथ शुरू करें: 'मैं खुश रहूं। मैं स्वस्थ रहूं। मैं सुरक्षित रहूं। मैं आसानी से जीऊं।'",
+        "इन वाक्यांशों को धीरे-धीरे दोहराएं, इरादे को महसूस करते हुए",
+        "एक प्रियजन तक विस्तारित करें: 'आप खुश रहें। आप स्वस्थ रहें। आप सुरक्षित रहें। आप आसानी से जीएं।'",
+        "एक तटस्थ व्यक्ति (परिचित) तक विस्तारित करें",
+        "एक कठिन व्यक्ति तक विस्तारित करें (यदि तैयार हैं)",
+        "सभी प्राणियों तक विस्तारित करें: 'सभी प्राणी खुश, स्वस्थ, सुरक्षित रहें, और आसानी से जीएं।'",
+        "एक पल के लिए चुपचाप बैठें, ध्यान दें कि आप कैसा महसूस करते हैं"
+      ],
+      "video_url": "https://www.youtube.com/watch?v=sz7cpV7ERsM",
+      "scientific_basis": "Research shows loving-kindness meditation increases positive emotions, reduces self-criticism, and improves social connection.",
+      "external_links": [
+        "https://ggia.berkeley.edu/practice/loving_kindness_meditation"
+      ]
+    },
+    {
+      "id": "physical-exercise",
+      "name": "Quick Energy-Release Exercise",
+      "name_hi": "त्वरित ऊर्जा-रिलीज व्यायाम",
+      "category": "physical",
+      "difficulty": "easy",
+      "duration_minutes": 5,
+      "description": "Release pent-up anxiety and stress through brief, intense physical activity.",
+      "description_hi": "संक्षिप्त, तीव्र शारीरिक गतिविधि के माध्यम से दबी हुई चिंता और तनाव को मुक्त करें।",
+      "when_to_use": ["anxiety", "anger", "restlessness", "pent_up_energy"],
+      "steps": [
+        "Find a private space where you can move freely",
+        "Do 20 jumping jacks",
+        "Run in place for 30 seconds",
+        "Do 10 squats",
+        "Shake out your arms and legs vigorously for 30 seconds",
+        "Take 5 deep breaths",
+        "Notice how your body feels - the energy shift",
+        "Repeat if needed"
+      ],
+      "steps_hi": [
+        "एक निजी स्थान खोजें जहां आप स्वतंत्र रूप से चल सकें",
+        "20 जंपिंग जैक करें",
+        "30 सेकंड के लिए जगह पर दौड़ें",
+        "10 स्क्वाट करें",
+        "30 सेकंड के लिए अपनी बाहों और पैरों को जोर से हिलाएं",
+        "5 गहरी सांसें लें",
+        "ध्यान दें कि आपका शरीर कैसा महसूस करता है - ऊर्जा बदलाव",
+        "यदि आवश्यक हो तो दोहराएं"
+      ],
+      "video_url": "https://www.youtube.com/watch?v=ml6cT4AZdqI",
+      "scientific_basis": "Physical exercise releases endorphins, reduces cortisol, and provides an immediate outlet for nervous energy.",
+      "external_links": [
+        "https://www.mayoclinic.org/healthy-lifestyle/stress-management/in-depth/exercise-and-stress/art-20044469"
+      ]
+    },
+    {
+      "id": "grounding-sensory-object",
+      "name": "Sensory Object Grounding",
+      "name_hi": "संवेदी वस्तु ग्राउंडिंग",
+      "category": "grounding",
+      "difficulty": "easy",
+      "duration_minutes": 3,
+      "description": "Use a physical object to anchor yourself in the present moment.",
+      "description_hi": "वर्तमान क्षण में खुद को लंगर डालने के लिए एक भौतिक वस्तु का उपयोग करें।",
+      "when_to_use": ["anxiety", "panic", "dissociation", "overwhelm"],
+      "steps": [
+        "Choose an object you can hold (stone, stress ball, fabric, etc.)",
+        "Hold the object in your hand",
+        "Focus all your attention on the object",
+        "Notice its texture - smooth, rough, soft, hard?",
+        "Notice its temperature - warm, cool?",
+        "Notice its weight - heavy, light?",
+        "Notice its shape and any details",
+        "Breathe slowly as you explore the object",
+        "Keep this object with you as a grounding tool"
+      ],
+      "steps_hi": [
+        "एक वस्तु चुनें जिसे आप पकड़ सकते हैं (पत्थर, स्ट्रेस बॉल, कपड़ा, आदि)",
+        "वस्तु को अपने हाथ में पकड़ें",
+        "अपना सारा ध्यान वस्तु पर केंद्रित करें",
+        "इसकी बनावट पर ध्यान दें - चिकनी, खुरदरी, नरम, कठोर?",
+        "इसके तापमान पर ध्यान दें - गर्म, ठंडा?",
+        "इसके वजन पर ध्यान दें - भारी, हल्का?",
+        "इसके आकार और किसी भी विवरण पर ध्यान दें",
+        "वस्तु का पता लगाते समय धीरे-धीरे सांस लें",
+        "इस वस्तु को एक ग्राउंडिंग टूल के रूप में अपने साथ रखें"
+      ],
+      "video_url": "https://www.youtube.com/watch?v=30VMIEmA114",
+      "scientific_basis": "Tactile grounding engages the somatosensory cortex, interrupting anxiety loops and promoting present-moment awareness.",
+      "external_links": [
+        "https://www.therapistaid.com/therapy-worksheet/grounding-techniques"
+      ]
+    },
+    {
+      "id": "cbt-behavioral-activation",
+      "name": "Behavioral Activation",
+      "name_hi": "व्यवहार सक्रियण",
+      "category": "cbt",
+      "difficulty": "medium",
+      "duration_minutes": 30,
+      "description": "Combat depression by scheduling and engaging in pleasurable or meaningful activities.",
+      "description_hi": "सुखद या सार्थक गतिविधियों को शेड्यूल और संलग्न करके अवसाद से लड़ें।",
+      "when_to_use": ["depression", "low_motivation", "anhedonia", "isolation"],
+      "steps": [
+        "Make a list of activities you used to enjoy or want to try",
+        "Rate each activity for pleasure (1-10) and importance (1-10)",
+        "Choose one small, achievable activity for today",
+        "Schedule a specific time to do it",
+        "Do the activity even if you don't feel like it",
+        "Notice your mood before and after the activity",
+        "Gradually increase the number of activities each week",
+        "Track your progress and celebrate small wins"
+      ],
+      "steps_hi": [
+        "उन गतिविधियों की एक सूची बनाएं जिनका आप आनंद लेते थे या प्रयास करना चाहते हैं",
+        "प्रत्येक गतिविधि को आनंद (1-10) और महत्व (1-10) के लिए रेट करें",
+        "आज के लिए एक छोटी, प्राप्त करने योग्य गतिविधि चुनें",
+        "इसे करने के लिए एक विशिष्ट समय शेड्यूल करें",
+        "गतिविधि करें भले ही आप ऐसा महसूस न करें",
+        "गतिविधि से पहले और बाद में अपने मूड पर ध्यान दें",
+        "हर हफ्ते गतिविधियों की संख्या धीरे-धीरे बढ़ाएं",
+        "अपनी प्रगति को ट्रैक करें और छोटी जीत का जश्न मनाएं"
+      ],
+      "video_url": "https://www.youtube.com/watch?v=N7AH1PRQKWo",
+      "scientific_basis": "Behavioral activation is an evidence-based treatment for depression that breaks the cycle of avoidance and inactivity.",
+      "external_links": [
+        "https://www.apa.org/ptsd-guideline/patients-and-families/behavioral-activation"
+      ]
+    },
+    {
+      "id": "mindfulness-rain",
+      "name": "RAIN Technique for Difficult Emotions",
+      "name_hi": "कठिन भावनाओं के लिए RAIN तकनीक",
+      "category": "mindfulness",
+      "difficulty": "medium",
+      "duration_minutes": 10,
+      "description": "A four-step mindfulness practice to work through difficult emotions with compassion.",
+      "description_hi": "करुणा के साथ कठिन भावनाओं के माध्यम से काम करने के लिए एक चार-चरणीय माइंडफुलनेस अभ्यास।",
+      "when_to_use": ["anxiety", "sadness", "anger", "difficult_emotions"],
+      "steps": [
+        "R - RECOGNIZE: Acknowledge what you're feeling. Name the emotion.",
+        "A - ALLOW: Let the emotion be there without trying to fix or suppress it.",
+        "I - INVESTIGATE: With kindness, explore where you feel it in your body. What thoughts come up?",
+        "N - NURTURE: Offer yourself compassion. What do you need right now? Place a hand on your heart.",
+        "Sit with this for a few minutes",
+        "Notice if the emotion has shifted",
+        "Remember: emotions are temporary visitors"
+      ],
+      "steps_hi": [
+        "R - पहचानें: स्वीकार करें कि आप क्या महसूस कर रहे हैं। भावना को नाम दें।",
+        "A - अनुमति दें: भावना को ठीक करने या दबाने की कोशिश किए बिना वहां रहने दें।",
+        "I - जांच करें: दयालुता के साथ, पता लगाएं कि आप इसे अपने शरीर में कहां महसूस करते हैं। कौन से विचार आते हैं?",
+        "N - पोषण करें: अपने आप को करुणा दें। आपको अभी क्या चाहिए? अपने दिल पर एक हाथ रखें।",
+        "इसके साथ कुछ मिनट बैठें",
+        "ध्यान दें कि क्या भावना बदल गई है",
+        "याद रखें: भावनाएं अस्थायी आगंतुक हैं"
+      ],
+      "video_url": "https://www.youtube.com/watch?v=SAQO1uhPsXk",
+      "scientific_basis": "Developed by Tara Brach, RAIN combines mindfulness with self-compassion to reduce emotional reactivity.",
+      "external_links": [
+        "https://www.tarabrach.com/rain/"
+      ]
+    },
+    {
+      "id": "breathing-alternate-nostril",
+      "name": "Alternate Nostril Breathing (Nadi Shodhana)",
+      "name_hi": "नाड़ी शोधन प्राणायाम",
+      "category": "breathing",
+      "difficulty": "medium",
+      "duration_minutes": 5,
+      "description": "A yogic breathing technique that balances the nervous system and calms the mind.",
+      "description_hi": "एक योगिक श्वास तकनीक जो तंत्रिका तंत्र को संतुलित करती है और मन को शांत करती है।",
+      "when_to_use": ["anxiety", "stress", "racing_thoughts", "before_sleep"],
+      "steps": [
+        "Sit comfortably with your spine straight",
+        "Use your right thumb to close your right nostril",
+        "Inhale slowly through your left nostril for 4 counts",
+        "Close your left nostril with your ring finger",
+        "Release your right nostril and exhale for 4 counts",
+        "Inhale through your right nostril for 4 counts",
+        "Close your right nostril, release left, and exhale for 4 counts",
+        "This is one cycle. Repeat for 5-10 cycles"
+      ],
+      "steps_hi": [
+        "अपनी रीढ़ सीधी रखते हुए आराम से बैठें",
+        "अपने दाहिने नथुने को बंद करने के लिए अपने दाहिने अंगूठे का उपयोग करें",
+        "4 गिनती के लिए अपने बाएं नथुने से धीरे-धीरे सांस लें",
+        "अपनी अनामिका से अपने बाएं नथुने को बंद करें",
+        "अपने दाहिने नथुने को छोड़ें और 4 गिनती के लिए सांस छोड़ें",
+        "4 गिनती के लिए अपने दाहिने नथुने से सांस लें",
+        "अपने दाहिने नथुने को बंद करें, बाएं को छोड़ें, और 4 गिनती के लिए सांस छोड़ें",
+        "यह एक चक्र है। 5-10 चक्रों के लिए दोहराएं"
+      ],
+      "video_url": "https://www.youtube.com/watch?v=8VwufJrUhic",
+      "scientific_basis": "Research shows alternate nostril breathing reduces heart rate, blood pressure, and anxiety while improving cognitive function.",
+      "external_links": [
+        "https://www.artofliving.org/in-en/yoga/breathing-techniques/alternate-nostril-breathing-nadi-shodhan"
+      ]
+    },
+    {
+      "id": "grounding-butterfly-hug",
+      "name": "Butterfly Hug (Self-Soothing)",
+      "name_hi": "बटरफ्लाई हग (स्व-सुखदायक)",
+      "category": "grounding",
+      "difficulty": "easy",
+      "duration_minutes": 3,
+      "description": "A self-soothing technique using bilateral stimulation to calm anxiety.",
+      "description_hi": "चिंता को शांत करने के लिए द्विपक्षीय उत्तेजना का उपयोग करते हुए एक स्व-सुखदायक तकनीक।",
+      "when_to_use": ["anxiety", "panic", "trauma_response", "need_comfort"],
+      "steps": [
+        "Cross your arms over your chest",
+        "Place your right hand on your left shoulder and left hand on your right shoulder",
+        "Gently tap your shoulders alternately (like butterfly wings)",
+        "Tap slowly and rhythmically - left, right, left, right",
+        "Breathe deeply as you tap",
+        "Continue for 1-3 minutes or until you feel calmer",
+        "You can also hum or say comforting words to yourself"
+      ],
+      "steps_hi": [
+        "अपनी बाहों को अपनी छाती पर क्रॉस करें",
+        "अपने दाहिने हाथ को अपने बाएं कंधे पर और बाएं हाथ को अपने दाहिने कंधे पर रखें",
+        "धीरे से अपने कंधों को वैकल्पिक रूप से टैप करें (तितली के पंखों की तरह)",
+        "धीरे-धीरे और लयबद्ध रूप से टैप करें - बाएं, दाएं, बाएं, दाएं",
+        "टैप करते समय गहरी सांस लें",
+        "1-3 मिनट के लिए जारी रखें या जब तक आप शांत महसूस न करें",
+        "आप खुद को गुनगुना या आरामदायक शब्द भी कह सकते हैं"
+      ],
+      "video_url": "https://www.youtube.com/watch?v=iGGJrqscvtU",
+      "scientific_basis": "Used in EMDR therapy, bilateral stimulation activates both brain hemispheres, reducing emotional intensity and promoting self-soothing.",
+      "external_links": [
+        "https://www.emdria.org/about-emdr-therapy/"
+      ]
+    },
+    {
+      "id": "cbt-problem-solving",
+      "name": "Structured Problem-Solving",
+      "name_hi": "संरचित समस्या-समाधान",
+      "category": "cbt",
+      "difficulty": "medium",
+      "duration_minutes": 20,
+      "description": "A systematic approach to solving problems that feel overwhelming.",
+      "description_hi": "समस्याओं को हल करने के लिए एक व्यवस्थित दृष्टिकोण जो भारी लगती हैं।",
+      "when_to_use": ["stress", "overwhelm", "anxiety", "stuck_feeling"],
+      "steps": [
+        "Step 1: Define the problem clearly in one sentence",
+        "Step 2: Brainstorm all possible solutions (don't judge yet)",
+        "Step 3: List pros and cons for each solution",
+        "Step 4: Choose the best solution (or combination)",
+        "Step 5: Break it into small, actionable steps",
+        "Step 6: Take the first step today",
+        "Step 7: Review and adjust as needed",
+        "Remember: not all problems need immediate solutions"
+      ],
+      "steps_hi": [
+        "चरण 1: समस्या को एक वाक्य में स्पष्ट रूप से परिभाषित करें",
+        "चरण 2: सभी संभावित समाधानों पर विचार-मंथन करें (अभी तक न्याय न करें)",
+        "चरण 3: प्रत्येक समाधान के लिए पक्ष और विपक्ष सूचीबद्ध करें",
+        "चरण 4: सर्वोत्तम समाधान चुनें (या संयोजन)",
+        "चरण 5: इसे छोटे, कार्रवाई योग्य चरणों में तोड़ें",
+        "चरण 6: आज पहला कदम उठाएं",
+        "चरण 7: आवश्यकतानुसार समीक्षा और समायोजन करें",
+        "याद रखें: सभी समस्याओं को तत्काल समाधान की आवश्यकता नहीं है"
+      ],
+      "video_url": "https://www.youtube.com/watch?v=HuWRMQEYqDU",
+      "scientific_basis": "Problem-solving therapy is an evidence-based treatment that reduces stress and improves coping skills.",
+      "external_links": [
+        "https://www.apa.org/topics/psychotherapy/problem-solving"
+      ]
+    },
+    {
+      "id": "mindfulness-mindful-eating",
+      "name": "Mindful Eating Exercise",
+      "name_hi": "माइंडफुल खाने का व्यायाम",
+      "category": "mindfulness",
+      "difficulty": "easy",
+      "duration_minutes": 10,
+      "description": "Practice mindfulness by eating slowly and paying attention to all sensory aspects of food.",
+      "description_hi": "धीरे-धीरे खाने और भोजन के सभी संवेदी पहलुओं पर ध्यान देकर माइंडफुलनेस का अभ्यास करें।",
+      "when_to_use": ["stress", "anxiety", "eating_issues", "daily_practice"],
+      "steps": [
+        "Choose a small piece of food (raisin, chocolate, fruit)",
+        "Look at it closely - notice color, shape, texture",
+        "Smell it - what aromas do you notice?",
+        "Place it in your mouth but don't chew yet - notice the texture",
+        "Slowly bite into it - notice the taste, texture changes",
+        "Chew slowly, paying attention to each sensation",
+        "Notice the urge to swallow, then swallow mindfully",
+        "Observe any lingering tastes or sensations",
+        "Try this with one meal per day"
+      ],
+      "steps_hi": [
+        "भोजन का एक छोटा टुकड़ा चुनें (किशमिश, चॉकलेट, फल)",
+        "इसे करीब से देखें - रंग, आकार, बनावट पर ध्यान दें",
+        "इसे सूंघें - आप कौन सी सुगंध देखते हैं?",
+        "इसे अपने मुंह में रखें लेकिन अभी तक चबाएं नहीं - बनावट पर ध्यान दें",
+        "धीरे-धीरे इसे काटें - स्वाद, बनावट परिवर्तन पर ध्यान दें",
+        "धीरे-धीरे चबाएं, प्रत्येक संवेदना पर ध्यान दें",
+        "निगलने की इच्छा पर ध्यान दें, फिर ध्यान से निगलें",
+        "किसी भी बची हुई स्वाद या संवेदनाओं का निरीक्षण करें",
+        "प्रति दिन एक भोजन के साथ इसे आजमाएं"
+      ],
+      "video_url": "https://www.youtube.com/watch?v=6tw93IgfL0U",
+      "scientific_basis": "Mindful eating reduces stress, improves digestion, and helps develop a healthier relationship with food.",
+      "external_links": [
+        "https://www.health.harvard.edu/staying-healthy/8-steps-to-mindful-eating"
+      ]
+    },
+    {
+      "id": "physical-stretching",
+      "name": "Tension-Release Stretching Routine",
+      "name_hi": "तनाव-मुक्ति स्ट्रेचिंग रूटीन",
+      "category": "physical",
+      "difficulty": "easy",
+      "duration_minutes": 10,
+      "description": "Gentle stretches to release physical tension and promote relaxation.",
+      "description_hi": "शारीरिक तनाव को मुक्त करने और विश्राम को बढ़ावा देने के लिए कोमल स्ट्रेच।",
+      "when_to_use": ["physical_tension", "stress", "anxiety", "desk_work"],
+      "steps": [
+        "Neck rolls: Slowly roll your head in circles, 5 times each direction",
+        "Shoulder shrugs: Lift shoulders to ears, hold 5 seconds, release. Repeat 5 times",
+        "Arm circles: Extend arms, make circles, 10 times forward and backward",
+        "Torso twist: Sit and gently twist left and right, 5 times each side",
+        "Forward fold: Stand and fold forward, let arms dangle, hold 30 seconds",
+        "Hip circles: Stand and rotate hips in circles, 5 times each direction",
+        "Ankle rolls: Rotate each ankle 5 times in each direction",
+        "Breathe deeply throughout, moving slowly and gently"
+      ],
+      "steps_hi": [
+        "गर्दन रोल: धीरे-धीरे अपने सिर को गोलाकार में घुमाएं, प्रत्येक दिशा में 5 बार",
+        "कंधे उचकाना: कंधों को कानों तक उठाएं, 5 सेकंड पकड़ें, छोड़ें। 5 बार दोहराएं",
+        "बाह वृत्त: बाहों को विस्तारित करें, वृत्त बनाएं, 10 बार आगे और पीछे",
+        "धड़ मोड़: बैठें और धीरे से बाएं और दाएं मुड़ें, प्रत्येक तरफ 5 बार",
+        "आगे मुड़ना: खड़े हों और आगे मुड़ें, बाहों को लटकने दें, 30 सेकंड पकड़ें",
+        "कूल्हे वृत्त: खड़े हों और कूल्हों को गोलाकार में घुमाएं, प्रत्येक दिशा में 5 बार",
+        "टखने रोल: प्रत्येक टखने को प्रत्येक दिशा में 5 बार घुमाएं",
+        "पूरे समय गहरी सांस लें, धीरे-धीरे और धीरे से चलें"
+      ],
+      "video_url": "https://www.youtube.com/watch?v=g_tea8ZNk5A",
+      "scientific_basis": "Stretching releases muscle tension, improves circulation, and activates the relaxation response.",
+      "external_links": [
+        "https://www.mayoclinic.org/healthy-lifestyle/stress-management/in-depth/stress-relief/art-20044476"
+      ]
+    }
+  ],
+  "categories": [
+    {
+      "id": "breathing",
+      "name": "Breathing Exercises",
+      "name_hi": "श्वास व्यायाम",
+      "description": "Techniques that use controlled breathing to calm the nervous system",
+      "description_hi": "तंत्रिका तंत्र को शांत करने के लिए नियंत्रित श्वास का उपयोग करने वाली तकनीकें"
+    },
+    {
+      "id": "grounding",
+      "name": "Grounding Techniques",
+      "name_hi": "ग्राउंडिंग तकनीकें",
+      "description": "Methods to anchor yourself in the present moment during anxiety or panic",
+      "description_hi": "चिंता या घबराहट के दौरान खुद को वर्तमान क्षण में लंगर डालने के तरीके"
+    },
+    {
+      "id": "mindfulness",
+      "name": "Mindfulness & Meditation",
+      "name_hi": "माइंडफुलनेस और ध्यान",
+      "description": "Practices to cultivate present-moment awareness and acceptance",
+      "description_hi": "वर्तमान-क्षण जागरूकता और स्वीकृति विकसित करने के लिए अभ्यास"
+    },
+    {
+      "id": "cbt",
+      "name": "CBT Techniques",
+      "name_hi": "CBT तकनीकें",
+      "description": "Cognitive Behavioral Therapy exercises to challenge negative thoughts",
+      "description_hi": "नकारात्मक विचारों को चुनौती देने के लिए संज्ञानात्मक व्यवहार थेरेपी व्यायाम"
+    },
+    {
+      "id": "physical",
+      "name": "Physical Activities",
+      "name_hi": "शारीरिक गतिविधियां",
+      "description": "Movement-based exercises to release tension and boost mood",
+      "description_hi": "तनाव मुक्त करने और मूड को बढ़ावा देने के लिए गति-आधारित व्यायाम"
+    }
+  ]
+}
+
