@@ -4,6 +4,8 @@ import VoiceRecorder from '../components/VoiceRecorder';
 import ChatInterface from '../components/ChatInterface';
 import LanguageSelector from '../components/LanguageSelector';
 import ActionButtons from '../components/ActionButtons';
+import EmergencySetup from '../components/EmergencySetup';
+import EmergencyAlertButton from '../components/EmergencyAlertButton';
 import apiService from '../services/api';
 
 function ChatPage() {
@@ -20,6 +22,9 @@ function ChatPage() {
   const [isPlaying, setIsPlaying] = useState(false);
   const [currentPlayingId, setCurrentPlayingId] = useState(null);
   const [showCrisisHelp, setShowCrisisHelp] = useState(false);
+  const [showEmergencySetup, setShowEmergencySetup] = useState(false);
+  const [emergencySetupComplete, setEmergencySetupComplete] = useState(false);
+  const [crisisContext, setCrisisContext] = useState(null);
 
   useEffect(() => {
     // Generate session ID
@@ -29,6 +34,9 @@ function ChatPage() {
     
     // Check backend health
     checkBackendHealth();
+    
+    // Check if emergency setup is complete
+    checkEmergencySetup(newSessionId);
   }, []);
 
   const checkBackendHealth = async () => {
@@ -38,6 +46,34 @@ function ChatPage() {
       console.error('Backend health check failed:', err);
       setError('Unable to connect to the server. Please make sure the backend is running.');
     }
+  };
+
+  const checkEmergencySetup = async (sid) => {
+    try {
+      const response = await fetch(`http://localhost:8000/api/emergency/contacts/check/${sid}`);
+      if (response.ok) {
+        const data = await response.json();
+        setEmergencySetupComplete(data.setup_completed);
+        
+        // Show setup modal if not complete (after a short delay to let UI load)
+        if (!data.setup_completed) {
+          setTimeout(() => {
+            setShowEmergencySetup(true);
+          }, 2000);
+        }
+      }
+    } catch (err) {
+      console.error('Error checking emergency setup:', err);
+    }
+  };
+
+  const handleEmergencySetupComplete = () => {
+    setShowEmergencySetup(false);
+    setEmergencySetupComplete(true);
+  };
+
+  const handleSkipEmergencySetup = () => {
+    setShowEmergencySetup(false);
   };
 
   const handleLanguageChange = (code, name) => {
@@ -81,6 +117,15 @@ function ChatPage() {
       // Show crisis help if detected
       if (response.is_crisis) {
         setShowCrisisHelp(true);
+        
+        // Update crisis context for emergency alert
+        setCrisisContext({
+          detected_emotion: response.emotion || 'distress',
+          crisis_indicators: ['crisis detected in conversation'],
+          recent_concerns: response.transcription,
+          intensity: 0.8,
+          timestamp: new Date().toISOString()
+        });
       }
 
       // Auto-play the audio response
@@ -246,6 +291,24 @@ function ChatPage() {
           </div>
         </div>
       </footer>
+
+      {/* Emergency Setup Modal */}
+      {showEmergencySetup && sessionId && (
+        <EmergencySetup
+          sessionId={sessionId}
+          onComplete={handleEmergencySetupComplete}
+          onSkip={handleSkipEmergencySetup}
+        />
+      )}
+
+      {/* Emergency Alert Button */}
+      {emergencySetupComplete && sessionId && (
+        <EmergencyAlertButton
+          sessionId={sessionId}
+          crisisContext={crisisContext}
+          userName={null}
+        />
+      )}
     </div>
   );
 }

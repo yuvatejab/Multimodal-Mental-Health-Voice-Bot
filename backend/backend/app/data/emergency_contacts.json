@@ -1,0 +1,122 @@
+{
+  "session_1764845993343": {
+    "session_id": "session_1764845993343",
+    "contacts": [
+      {
+        "name": "Best Friend",
+        "phone": "+916301465458",
+        "relationship": "Family",
+        "whatsapp_enabled": true
+      }
+    ],
+    "location_permission": true,
+    "setup_completed": true,
+    "created_at": "2025-12-04 16:30:57.703872",
+    "updated_at": "2025-12-04 16:30:57.703905"
+  },
+  "session_1764846073322": {
+    "session_id": "session_1764846073322",
+    "contacts": [
+      {
+        "name": "Best Friend",
+        "phone": "+916301465458",
+        "relationship": "Family",
+        "whatsapp_enabled": true
+      }
+    ],
+    "location_permission": true,
+    "setup_completed": true,
+    "created_at": "2025-12-04 16:31:30.998525",
+    "updated_at": "2025-12-04 16:31:30.998530"
+  },
+  "session_1764847102689": {
+    "session_id": "session_1764847102689",
+    "contacts": [
+      {
+        "name": "Best Firend",
+        "phone": "+916301465458",
+        "relationship": "Family",
+        "whatsapp_enabled": true
+      }
+    ],
+    "location_permission": true,
+    "setup_completed": true,
+    "created_at": "2025-12-04 16:48:43.427642",
+    "updated_at": "2025-12-04 16:48:43.427696"
+  },
+  "session_1764847342611": {
+    "session_id": "session_1764847342611",
+    "contacts": [
+      {
+        "name": "Yuva ",
+        "phone": "+916301465458",
+        "relationship": "Family",
+        "whatsapp_enabled": true
+      }
+    ],
+    "location_permission": true,
+    "setup_completed": true,
+    "created_at": "2025-12-04 16:52:39.507290",
+    "updated_at": "2025-12-04 16:52:39.507337"
+  },
+  "session_1764847653496": {
+    "session_id": "session_1764847653496",
+    "contacts": [
+      {
+        "name": "Yuva ",
+        "phone": "+916301465458",
+        "relationship": "Family",
+        "whatsapp_enabled": true
+      }
+    ],
+    "location_permission": true,
+    "setup_completed": true,
+    "created_at": "2025-12-04 16:57:46.980459",
+    "updated_at": "2025-12-04 16:57:46.980503"
+  },
+  "session_1764847873888": {
+    "session_id": "session_1764847873888",
+    "contacts": [
+      {
+        "name": "Yuva ",
+        "phone": "+9163014655458",
+        "relationship": "Family",
+        "whatsapp_enabled": true
+      }
+    ],
+    "location_permission": true,
+    "setup_completed": true,
+    "created_at": "2025-12-04 17:02:59.089954",
+    "updated_at": "2025-12-04 17:02:59.089987"
+  },
+  "session_1764848079579": {
+    "session_id": "session_1764848079579",
+    "contacts": [
+      {
+        "name": "Yuva",
+        "phone": "+916301465458",
+        "relationship": "Family",
+        "whatsapp_enabled": true
+      }
+    ],
+    "location_permission": true,
+    "setup_completed": true,
+    "created_at": "2025-12-04 17:04:56.247770",
+    "updated_at": "2025-12-04 17:04:56.247776"
+  },
+  "session_1764848183631": {
+    "session_id": "session_1764848183631",
+    "contacts": [
+      {
+        "name": "Yuva",
+        "phone": "+916301465458",
+        "relationship": "Family",
+        "whatsapp_enabled": true
+      }
+    ],
+    "location_permission": true,
+    "setup_completed": true,
+    "created_at": "2025-12-04 17:06:37.187289",
+    "updated_at": "2025-12-04 17:06:37.187315"
+  }
+}

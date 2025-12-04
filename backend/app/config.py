@@ -12,6 +12,12 @@ class Settings(BaseSettings):
     # API Keys
     GROQ_API_KEY: str = os.getenv("GROQ_API_KEY", "")
     
+    # Twilio Configuration (Optional - for Emergency Contact System)
+    TWILIO_ACCOUNT_SID: str = os.getenv("TWILIO_ACCOUNT_SID", "")
+    TWILIO_AUTH_TOKEN: str = os.getenv("TWILIO_AUTH_TOKEN", "")
+    TWILIO_PHONE_NUMBER: str = os.getenv("TWILIO_PHONE_NUMBER", "")
+    TWILIO_WHATSAPP_NUMBER: str = os.getenv("TWILIO_WHATSAPP_NUMBER", "whatsapp:+14155238886")
+    
     # CORS Settings
     CORS_ORIGINS: List[str] = [
         "http://localhost:3000",
